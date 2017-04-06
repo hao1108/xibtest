@@ -16,7 +16,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       list.append(0.34)
+        list.append(0.34)
         list.append(0.7)
         list.append(0.94)
         list.append(0.25)
