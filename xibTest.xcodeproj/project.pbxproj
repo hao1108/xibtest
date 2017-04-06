@@ -12,6 +12,8 @@
 		AF88B15C1E963F3F00E1B410 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF88B15A1E963F3F00E1B410 /* Main.storyboard */; };
 		AF88B15E1E963F3F00E1B410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF88B15D1E963F3F00E1B410 /* Assets.xcassets */; };
 		AF88B1611E963F3F00E1B410 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF88B15F1E963F3F00E1B410 /* LaunchScreen.storyboard */; };
+		AF88B16A1E9640FB00E1B410 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88B1681E9640FB00E1B410 /* myCell.swift */; };
+		AF88B16B1E9640FB00E1B410 /* myCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF88B1691E9640FB00E1B410 /* myCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		AF88B15D1E963F3F00E1B410 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF88B1601E963F3F00E1B410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF88B1621E963F3F00E1B410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF88B1681E9640FB00E1B410 /* myCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
+		AF88B1691E9640FB00E1B410 /* myCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,8 @@
 		AF88B14A1E963F3F00E1B410 = {
 			isa = PBXGroup;
 			children = (
+				AF88B1681E9640FB00E1B410 /* myCell.swift */,
+				AF88B1691E9640FB00E1B410 /* myCell.xib */,
 				AF88B1551E963F3F00E1B410 /* xibTest */,
 				AF88B1541E963F3F00E1B410 /* Products */,
 			);
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF88B1611E963F3F00E1B410 /* LaunchScreen.storyboard in Resources */,
+				AF88B16B1E9640FB00E1B410 /* myCell.xib in Resources */,
 				AF88B15E1E963F3F00E1B410 /* Assets.xcassets in Resources */,
 				AF88B15C1E963F3F00E1B410 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF88B1591E963F3F00E1B410 /* ViewController.swift in Sources */,
+				AF88B16A1E9640FB00E1B410 /* myCell.swift in Sources */,
 				AF88B1571E963F3F00E1B410 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

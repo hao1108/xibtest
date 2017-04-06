@@ -8,11 +8,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
+{
 
+    @IBOutlet weak var myTableview: UITableView!
+    var list = [Float]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       list.append(0.34)
+        list.append(0.7)
+        list.append(0.94)
+        list.append(0.25)
+        let nib = UINib(nibName: "myCell", bundle: nil)
+        myTableview.register(nib, forCellReuseIdentifier: "Cell")
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = myTableview.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! myCell
+        cell.label.text = String(list[indexPath.row])
+        cell.progressView.progress = list[indexPath.row]
+        return cell
+        
+      
     }
 
     override func didReceiveMemoryWarning() {
